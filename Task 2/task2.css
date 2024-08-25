@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .logo {
+    font-size: 24px;
+    color: #16847b;
+    margin-left: 30px;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+}
+
+.navbar ul li {
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 20px;
+}
+
+.navbar .icons {
+    display: flex;
+    gap: 25px;
+}
+.icons img{
+    height: 25px;
+    width: 30px;
+}
+
+
+/* -------------------------------Hero Section----------------------------------------- */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 20px;
+    background: #62eeee;
+    height: 500px;
+}
+.hero-text {
+   margin-top: -30px;
+}
+.hero-text h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.hero-text .btn {
+    padding: 10px 30px;
+    background-color: white;
+    border-radius: 20px;
+    margin-left: 10px;
+    color: #02aab0;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+}
+
+.hero-image img{
+   height:400px;
+    width: 400px;
+    margin-right: 100px;
+    margin-top: -10px;
+    border-radius: 50%;
+}
+.brands {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 20px;
+    background: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 25px;
+}
+
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+    background-color: #94dada; 
+}
+
+.tshirts {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto auto;
+    gap: 15px;
+    max-width: 100%;
+}
+
+.tshirts img {
+    width: 350px;
+    height: 300px;
+    border-radius: 8px; 
+}
+.tshirts .img1 {
+    width: 750px;
+    height: 300px;
+    border-radius: 8px;
+    grid-column: span 2;
+}
+.about-us {
+    flex: 1;
+    max-width: 40%;
+    padding-left: 40px;
+}
+
+.about-us h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.about-us p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #02aab0;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+    background-color: white;
+}
+
+.btn:hover {
+    background-color:white;
+    color: black;
+}

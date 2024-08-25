@@ -1,0 +1,278 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+}
+h1 {
+    font-family: Arial, sans-serif;
+    text-align: center; 
+    margin-top: 50px; 
+    font-size: 40px;
+}
+.greeting, .name {
+    background-image: linear-gradient(63deg, #df35d7, #f7ce68 36%, #85ffbd);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    display: inline-block;
+}
+.greeting {
+    font-size:60px;
+    color: #FF6347; 
+    letter-spacing: 2px;
+}
+.greeting, .name,.subtitle{
+    margin-right: 700px;
+    line-height: 1; 
+    
+}
+.name {
+    font-size: 60px;
+    color: #20B2AA; 
+    font-weight: bold;
+    letter-spacing: 3px;
+    display: block;
+    margin-top: 10px; 
+    margin-left:-70px;
+}
+.subtitle {
+    font-size: 1.5em;
+    text-align: center;
+    color: #FFF; 
+    margin-left: 30px;
+}
+header {
+    background-color:black;
+    color: #fff;
+    padding: 40px 0;
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px; 
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+#about {
+    padding: 50px 0;
+    background-color: #1a1a1a;
+    color: #f4f4f4; 
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    
+}
+
+h2 {
+    font-size: 2.5em;
+    margin-bottom: 50px;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+}
+
+.about-content img {
+    width: 40%;
+    max-width: 400px;
+    margin-right: 20px; 
+    margin-left: 170px;
+    border-radius: 10px;
+}
+.image-content1 img {
+   height: 400px;
+   margin-left: 350px;
+   margin-bottom: 50px;
+}
+.text-content {
+    width: 55%;
+    font-size: 1.2em;
+    line-height: 1.6;
+    text-align: center; 
+    margin-top: -90px;
+}
+
+.text-content p {
+    margin-bottom: 20px; 
+    font-size: 1.1em;
+    color: #ffffff; 
+    line-height: 1.8; 
+    
+}
+
+.resume-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: grey;
+    color: white; 
+    border: 2px solid #ffffff; 
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1em;
+    margin-top: 50px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.resume-btn:hover {
+    background-color: #ffffff; 
+    color: #1a1a1a; 
+}
+
+
+#home {
+    text-align: center;
+    background-color: #000;
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#home h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+#home p {
+    font-size: 1.5em;
+}
+
+#home img {
+    width: 300px;
+    margin-top: 20px;
+}
+
+#about, #skills, #projects, #contact, #resume {
+    text-align: center;
+    background-color:black;
+    color: #FFF;
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+ul li {
+    display: inline;
+    margin: 0 15px;
+    font-size: 1.2em;
+}
+#skills {
+    padding: 60px 0;
+    background-color: #000;
+    color: #fff; 
+    text-align: center;
+}
+
+#skills h2 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    color: #fff;
+}
+
+.skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px; 
+}
+
+.skill-item {
+    width: calc(16.66% - 20px); 
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    margin-bottom: 20px; 
+}
+
+.skill-item img {
+    width: 60px; 
+    height: 60px; 
+    object-fit: contain; 
+    margin-bottom: 10px;
+}
+
+.skill-item p {
+    font-size: 1em;
+    margin: 0;
+    color: #aaa;
+}
+
+.skill-item:hover {
+    transform: scale(1.1);
+}
+
+@media (max-width: 1200px) {
+    .skill-item {
+        width: calc(33.33% - 20px); 
+    }
+}
+
+@media (max-width: 768px) {
+    .skill-item {
+        width: calc(50% - 20px); 
+    }
+
+    #skills h2 {
+        font-size: 2em;
+    }
+}
+
+#resume a {
+    display: inline-block;
+    margin: 20px 0;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+#contact p {
+    font-size: 1.2em;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+}
