@@ -1,21 +1,33 @@
 {
   "version": 2,
-  "buildCommand": "npm run build",
-  "cleanUrls": true,
-  "crons": [
+  "builds": [
     {
-      "path": "/api/every-hour",
-      "schedule": "0 * * * *"
+      "src": "**/*.html",
+      "use": "@vercel/static-build"
     }
   ],
-  "devCommand": "npm run dev",
   "routes": [
     {
       "src": "/",
       "dest": "/index.html"
+    },
+    {
+      "src": "/css/(.*)",
+      "dest": "/css/$1"
+    },
+    {
+      "src": "/Images/(.*)",
+      "dest": "/Images/$1"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/$1"
+    },
+    {
+      "src": "/index.html",
+      "dest": "/index.html"
     }
   ],
-  "projectSettings": {
-    "framework": null
-  }
+  "buildCommand": null,
+  "cleanUrls": true
 }
