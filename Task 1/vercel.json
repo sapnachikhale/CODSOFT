@@ -1,11 +1,5 @@
 {
   "version": 2,
-  "builds": [
-    {
-      "src": "**/*.html",
-      "use": "@vercel/static-build"
-    }
-  ],
   "routes": [
     {
       "src": "/",
@@ -22,10 +16,6 @@
     {
       "src": "/(.*)",
       "dest": "/$1"
-    },
-    {
-      "src": "/index.html",
-      "dest": "/index.html"
     }
   ],
   "projectSettings": {
