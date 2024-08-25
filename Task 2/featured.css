@@ -169,10 +169,12 @@
     height: 35px;
     width:30px;
    margin-left: 10px;
+   cursor:pointer;
 }
 
 .payment-methods img {
     height: 25px;
     margin-left: 10px;
     margin-right: 10px;
+    cursor:pointer;
 }
