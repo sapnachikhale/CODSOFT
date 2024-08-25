@@ -3,7 +3,10 @@
   "builds": [
     {
       "src": "**/*.html",
-      "use": "@vercel/static-build"
+      "use": "@vercel/static-build",
+      "config": {
+        "distDir": "public" 
+      }
     }
   ],
   "routes": [
@@ -22,12 +25,7 @@
     {
       "src": "/(.*)",
       "dest": "/$1"
-    },
-    {
-      "src": "/index.html",
-      "dest": "/index.html"
     }
   ],
-  "buildCommand": null,
   "cleanUrls": true
 }
