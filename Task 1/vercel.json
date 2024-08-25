@@ -27,7 +27,8 @@
       "src": "/index.html",
       "dest": "/index.html"
     }
-
-  ]
+  ],
+  "projectSettings": {
+    "framework": null
+  }
 }
-
